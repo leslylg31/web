@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pingüinopedia</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: #000;
+            font-family: Arial, sans-serif;
+            background-color: #C7C7C7;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #4A6FA5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #2C5D8A;
+        }
+        h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 30px;
+            color: #2C5D8A;
+            padding-bottom: 5px;
+            margin: 10px auto;
+            width: 80%;
+            text-align: center;
+        }
+        nav {
+            margin: 15px 0;
+            background-color: #1ABC9C;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            background-color: #2C5D8A;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            margin: 15px auto;
+            width: 90%;
+            border-radius: 8px;
+        }
+        .hero img {
+            width: 130px;
+            border-radius: 8px;
+            margin-right: 25px;
+            border: 4px solid white;
+        }
+        section {
+            padding: 20px;
+            margin: 15px auto;
+            width: 85%;
+        }
+        p {
+            font-size: 17px;
+            line-height: 1.6;
+            margin: 10px 0;
+            text-align: justify;
+            padding: 0 15px;
+        }
+        img {
+            width: 320px;
+            border-radius: 8px;
+            border: 4px solid #4A6FA5;
+            margin: 15px auto;
+            display: block;
+        }
+        video {
+            width: 580px;
+            border-radius: 8px;
+            border: 4px solid #4A6FA5;
+            margin: 15px auto;
+            display: block;
+        }
+        audio {
+            display: block;
+            margin: 15px auto;
+            width: 50%;
+        }
+        ul, ol {
+            margin: 15px auto;
+            width: 80%;
+            font-size: 16px;
+            line-height: 1.6;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+            text-align: left;
+            padding-left: 5px;
+        }
+        .media-container {
+            margin: 20px auto;
+            padding: 15px;
+            width: 80%;
+            text-align: center;
+        }
+        .dedication-container {
+            margin-top: auto;
+            padding: 15px;
+            text-align: center;
+        }
+        .dedication {
+            display: inline-block;
+            font-size: 15px;
+            padding: 8px 15px;
+            background-color: white;
+            border: 2px solid #4A6FA5;
+            border-radius: 5px;
+            margin: 10px auto;
+        }
+        .external-page {
+            margin: 20px auto;
+            padding: 15px;
+            width: 90%;
+            text-align: center;
+        }
+        .footer-divider {
+            border-top: 1px solid #000;
+            margin: 20px auto;
+            width: 80%;
+        }
+        .footer-info {
+            text-align: center;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #C7C7C7;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #000;
+        }
+        th {
+            background-color: #4A6FA5;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pingüinopedia</h1>
+        <h2>Explorando el mundo de los pingüinos</h2>
+    </header>
+    <nav>
+        <a href="#historia">Historia</a>
+        <a href="#informacion">Información General</a>
+        <a href="#curiosidades">Curiosidades</a>
+        <a href="#importancia">Importancia</a>
+        <a href="#especies">Especies</a>
+        <a href="#comportamiento">Comportamiento</a>
+        <a href="#alimentacion">Alimentación</a>
+        <a href="#tabla">Tabla Comparativa</a>
+    </nav>
+
+    <div class="hero">
+        <img src="ramoncito.jpg" alt="Grupo de pingüinos">
+        <span>Descubre el increíble mundo de los pingüinos</span>
+    </div>
+
+    <div class="media-container">
+        <h2>Video pingüinos</h2>
+        <video width="600" autoplay loop controls>
+            <source src="video de pin.mp4.mp4" type="video/mp4">
+        </video>
+
+        <h3>Sonidos de pingüinos</h3>
+        <audio controls>
+            <source src="VIDEO DE PINGUINO.MP4.mp4" type="audio/mp3">
+        </audio>
+    </div>
+
+    <section id="historia">
+        <h2>Historia</h2>
+        <p>Los pingüinos han existido por millones de años, evolucionando para adaptarse perfectamente a la vida marina. Estos fascinantes animales son considerados fósiles vivientes, ya que su linaje se remonta a la época de los dinosaurios.</p>
+        <p>Se cree que los primeros pingüinos surgieron hace aproximadamente 60 millones de años en el hemisferio sur, poco después de la extinción de los dinosaurios. Los pingüinos prehistóricos eran mucho más grandes que sus descendientes actuales, con algunas especies alcanzando hasta 1.7 metros de altura.</p>
+        <p>La evolución de los pingüinos es un claro ejemplo de adaptación al medio acuático. Sus alas se transformaron en aletas eficientes para nadar, mientras que su denso plumaje y capa de grasa los protege de las gélidas temperaturas de su hábitat natural.</p>
+        <img src="pinguino.jpg" alt="Historia de los pingüinos">
+        <p><a href="#especies">Ver especies relacionadas</a></p>
+    </section>
+
+    <section id="informacion">
+        <h2>Información General</h2>
+        <p>Los pingüinos son aves marinas no voladoras que pertenecen a la familia Spheniscidae. A diferencia de la mayoría de las aves, sus alas se han convertido en aletas, lo que los hace excelentes nadadores pero incapaces de volar. Existen 18 especies de pingüinos reconocidas actualmente.</p>
+        <p>El plumaje de los pingüinos está especialmente diseñado para mantenerlos calientes en ambientes fríos. Cuentan con una capa externa de plumas impermeables y una densa capa interna que atrapa el aire, proporcionando aislamiento térmico. Además, poseen una gruesa capa de grasa subcutánea que los protege del frío extremo.</p>
+        <p>Los pingüinos pasan aproximadamente el 75% de su vida en el agua, donde son ágiles y veloces, alcanzando velocidades de hasta 40 km/h. En tierra, su movimiento característico es el "caminar como pingüino", aunque algunas especies pueden deslizarse sobre el vientre en la nieve (tobogganing) para ahorrar energía.</p>
+        <img src="info.jpg" alt="Información sobre pingüinos">
+    </section>
+
+    <section id="curiosidades">
+        <h2>Curiosidades</h2>
+        <ul>
+            <li>Los pingüinos pueden beber agua salada gracias a unas glándulas especiales ubicadas cerca de sus ojos que filtran el exceso de sal, la cual es excretada en forma de líquido concentrado.</li>
+            <li>El pingüino emperador es capaz de sumergirse a profundidades de más de 500 metros y contener la respiración durante casi 30 minutos, uno de los récords entre las aves.</li>
+            <li>Los pingüinos tienen un sistema de comunicación complejo que incluye vocalizaciones y lenguaje corporal. Cada pingüino tiene una llamada única que permite a sus parejas y crías reconocerlos.</li>
+            <li>Algunas especies de pingüinos pueden lanzarse al agua desde alturas de hasta 6 metros, alcanzando velocidades de 20 km/h al entrar al agua.</li>
+            <li>Los pingüinos tienen una glándula especial cerca de la cola que produce un aceite que extienden por sus plumas con el pico para impermeabilizarlas.</li>
+        </ul>
+        <img src="curiosidades.jpg" alt="Curiosidades sobre pingüinos">
+    </section>
+
+    <section id="importancia">
+        <h2>Importancia</h2>
+        <p>Los pingüinos juegan un papel vital en los ecosistemas marinos como reguladores de las poblaciones de peces, krill y calamares. Su presencia y estado de salud son indicadores importantes de la salud general de los océanos.</p>
+        <p>Como depredadores intermedios, contribuyen significativamente a la cadena alimentaria marina. Son presa importante para focas leopardo, leones marinos y orcas, mientras que controlan las poblaciones de sus propias presas, manteniendo el equilibrio ecológico.</p>
+        <p>Los pingüinos también son importantes para el ciclo de nutrientes en los ecosistemas antárticos. Sus excrementos (guano) son ricos en nitrógeno y fósforo, fertilizando las aguas costeras y promoviendo el crecimiento de fitoplancton, base de la cadena alimentaria marina.</p>
+        <p>Desde el punto de vista científico, los pingüinos son valiosos indicadores del cambio climático. Las alteraciones en sus poblaciones y patrones de reproducción proporcionan datos cruciales sobre los efectos del calentamiento global en los ecosistemas polares.</p>
+        <img src="importancia.jpg" alt="Importancia de los pingüinos">
+        <p><a href="#comportamiento">Ver comportamiento</a></p>
+    </section>
+
+    <section id="especies">
+        <h2>Especies</h2>
+        <ol>
+            <li><strong>Pingüino Emperador (Aptenodytes forsteri):</strong> El más grande de todos, vive exclusivamente en la Antártida y es famoso por su increíble resistencia al frío.</li>
+            <li><strong>Pingüino de Adelia (Pygoscelis adeliae):</strong> Reconocible por su anillo blanco alrededor del ojo, habita en la costa antártica.</li>
+            <li><strong>Pingüino Rey (Aptenodytes patagonicus):</strong> Segundo en tamaño, se distingue por sus brillantes manchas naranjas en las mejillas y pecho.</li>
+            <li><strong>Pingüino de Magallanes (Spheniscus magellanicus):</strong> Habita las costas de Argentina, Chile y las Islas Malvinas, con distintivas bandas blancas y negras.</li>
+            <li><strong>Pingüino Azul (Eudyptula minor):</strong> El más pequeño, mide solo 30-40 cm y vive en las costas de Australia y Nueva Zelanda.</li>
+        </ol>
+        <p>La distribución de las especies de pingüinos varía significativamente. Mientras algunas como el Emperador y el de Adelia habitan exclusivamente en la Antártida, otras como el de Magallanes o el Africano (Spheniscus demersus) se encuentran en climas más templados de Sudáfrica y Sudamérica. Cada especie ha desarrollado adaptaciones específicas a su entorno particular.</p>
+        <img src="especies.jpg" alt="Especies de pingüinos">
+    </section>
+
+    <section id="comportamiento">
+        <h2>Comportamiento</h2>
+        <p>Los pingüinos son aves extraordinariamente sociables que viven en grandes colonias que pueden contar con miles de individuos. Esta vida en comunidad les proporciona protección contra depredadores y ayuda a mantener el calor en los climas fríos.</p>
+        <p>Muchas especies realizan impresionantes migraciones anuales en busca de alimento y áreas de reproducción. El pingüino Adelia, por ejemplo, puede viajar hasta 13,000 km en un año entre sus áreas de alimentación y reproducción.</p>
+        <p>El comportamiento reproductivo de los pingüinos es particularmente fascinante. La mayoría son monógamos durante una temporada, y algunas especies como el pingüino emperador forman parejas estables durante años. Los rituales de cortejo incluyen vocalizaciones complejas y exhibiciones corporales sincronizadas.</p>
+        <p>Los pingüinos muestran comportamientos cooperativos notables, como el "tobogganing" (deslizarse sobre el vientre) para ahorrar energía, o formar "tortugas" (grupos compactos) para protegerse del frío extremo, rotando los individuos del centro hacia el exterior para compartir el calor.</p>
+        <img src="info.jpg" alt="Comportamiento de los pingüinos">
+    </section>
+
+    <section id="alimentacion">
+        <h2>Alimentación</h2>
+        <ul>
+            <li><strong>Peces:</strong> Constituyen la dieta principal de muchas especies, incluyendo anchoas, sardinas y bacalao antártico.</li>
+            <li><strong>Krill:</strong> Pequeños crustáceos que forman enormes bancos en aguas antárticas, base alimenticia de especies como el pingüino de Adelia.</li>
+            <li><strong>Calamares:</strong> Importantes en la dieta de especies más grandes como el pingüino emperador.</li>
+            <li><strong>Crustáceos:</strong> Además del krill, algunas especies consumen otros crustáceos como los anfípodos.</li>
+        </ul>
+        <p>Los pingüinos son excelentes cazadores submarinos, utilizando su velocidad (hasta 40 km/h) y agilidad para atrapar presas. Pueden realizar hasta 450 buceos en un solo día en busca de alimento. Sus ojos están adaptados para ver claramente bajo el agua, y algunas especies pueden detectar presas por bioluminiscencia.</p>
+        <p>La dieta varía según la especie, la temporada y la disponibilidad de presas. Los pingüinos adultos pueden consumir entre 0.5 y 1 kg de alimento diario, cantidad que aumenta significativamente durante la temporada de cría cuando deben alimentar a sus polluelos.</p>
+        <img src="alimentacion.jpg" alt="Alimentación de los pingüinos">
+    </section>
+
+    <section id="tabla">
+        <h2>Tabla Comparativa</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Especie</th>
+                    <th>Tamaño</th>
+                    <th>Característica única</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pingüino Emperador</td>
+                    <td>1.1 - 1.3 m</td>
+                    <td>Resiste temperaturas extremas de -60°C</td>
+                </tr>
+                <tr>
+                    <td>Pingüino de Adelia</td>
+                    <td>70 - 75 cm</td>
+                    <td>Anillo blanco alrededor de los ojos</td>
+                </tr>
+                <tr>
+                    <td>Pingüino Rey</td>
+                    <td>85 - 95 cm</td>
+                    <td>Manchas naranjas brillantes en cabeza y pecho</td>
+                </tr>
+                <tr>
+                    <td>Pingüino Azul</td>
+                    <td>30 - 40 cm</td>
+                    <td>El pingüino más pequeño del mundo</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="external-page">
+        <h2>Página Externa</h2>
+        <p>La siguiente sección muestra contenido embebido de la Global Penguin Society, una organización dedicada a la conservación de los pingüinos en todo el mundo:</p>
+        <object type="text/html" data="https://www.globalpenguinsociety.org/index_es.html" width="100%" height="500">
+            Tu navegador no soporta la visualización de páginas externas embebidas.
+            <a href="https://www.globalpenguinsociety.org/index_es.html" target="_blank">Visita la página directamente</a>
+        </object>
+       </section>
+
+    <div class="dedication-container">
+        <div class="dedication">
+            <p>Para E.</p>
+            <p><a href="#top">Volver arriba</a></p>
+        </div>
+        
+        <div class="footer-divider"></div>
+        
+        <div class="footer-info">
+            © 2025. Derechos reservados.<br>
+            Elaborado por: LESLY LIZZETH LIMA GUZMÁN<br>
+            Matrícula:<br>
+            Grupo: 612<br>
+            Plantel: 05 PANZACOLA
+        </div>
+    </div>
+</body>
+</html>
